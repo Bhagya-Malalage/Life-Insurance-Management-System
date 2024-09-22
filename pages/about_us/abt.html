@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Us</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Learn more about our comprehensive Life Insurance Management System, designed to streamline policy management, claims processing, and customer support."
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="navbar"></div>
+      <div id="btn"></div>
+    </header>
+
+    <div class="container">
+      <div>
+        <h1 class="heading">About Us</h1>
+      </div>
+
+      <div class="page">
+        <div>
+          <div>
+            <h2 class="sub-heading">Our Mission</h2>
+          </div>
+          <p class="para">
+            At Legacy Life Assurance, our mission is to provide comprehensive
+            and reliable life insurance solutions that empower individuals and
+            families to secure their financial future. We strive to offer
+            protection and peace of mind by ensuring that our clients' loved
+            ones are taken care of in times of uncertainty. Our commitment is to
+            build lasting relationships and deliver service with integrity and
+            compassion.
+          </p>
+        </div>
+
+        <div>
+          <div>
+            <h2 class="sub-heading">Who We Are</h2>
+          </div>
+          <p class="para">
+            Legacy Life Assurance is a trusted provider of life insurance
+            products, serving individuals and families across the globe. With
+            decades of experience, we have built a reputation for offering
+            personalized insurance solutions that meet the unique needs of every
+            client. Our team of dedicated professionals is passionate about
+            helping people plan for the future and protect what matters most.
+          </p>
+        </div>
+
+        <div>
+          <div>
+            <h2 class="sub-heading">Our Values</h2>
+          </div>
+          <p class="para">
+            We are driven by our core values of trust, integrity, and service
+            excellence. At Legacy Life Assurance, we believe in transparency,
+            ethical conduct, and putting our clients first. We are committed to
+            continuous innovation to ensure that we provide the best possible
+            insurance products that adapt to the changing needs of society. We
+            value our community and strive to make a positive impact through
+            corporate responsibility initiatives.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <script>
+      fetch("/components/navbar/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+
+    <script>
+      fetch("/components/footer/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
