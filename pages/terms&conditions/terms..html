@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Terms and conditions</title>
+    <meta charset="UTF-8" />
+    <meta
+     name="description"
+    content="Learn more about our comprehensive Life Insurance Management System, designed to streamline policy management, claims processing, and customer support."/>
+    <link rel="stylesheet" href="term.css"
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+      <div id="btn"></div>
+    </header>
+
+    <div class="container">
+
+      <div>
+        <h1 class="heading">Terms and Conditions</h1>
+      </div>
+
+      <div class="page">
+        
+        <div>
+          <div>
+            <h2 class="sub-heading">Introduction</h2>
+          </div>
+          <p class="para">Welcome to Legacy Life Assurance. By accessing and using our website, you agree to comply with and be bound by the following terms and conditions. Please read these terms carefully as they govern your use of our services. If you do not agree with any part of these terms, you must not use this website.</p>
+        </div>
+
+        <div>
+          <div>
+            <h2 class="sub-heading">Eligibility</h2>
+            <p class="para">To use the services provided by Legacy Life Assurance, you must be at least 18 years old and capable of entering into legally binding agreements. By using our services, you represent and warrant that you meet the eligibility requirements and are not barred from using our services under any applicable law.</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h2 class="sub-heading">Use of the Website</h2>
+            <p class="para">Legacy Life Assurance provides this website for informational purposes only. You agree to use the website in a manner that complies with all applicable laws and regulations. You must not use the website for any illegal or unauthorized purpose, including but not limited to violating intellectual property rights or engaging in fraudulent activities. We reserve the right to suspend or terminate access if we believe there has been a breach of these terms.</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h2 class="sub-heading">Privacy and Data Protection</h2>
+            <p class="para">Legacy Life Assurance respects your privacy and is committed to protecting your personal data. We collect and process personal information in accordance with our Privacy Policy, which you can find on this website. By using our website, you consent to the collection and use of your information as outlined in our Privacy Policy. We implement appropriate security measures to protect your data, but we cannot guarantee that unauthorized third parties will never breach those measures.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer>
+      <div id="footer"></div>
+    </footer>
+
+    <script>
+      fetch("/components/navbar/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+
+    <script>
+      fetch("/components/footer/footer.html")
+      .then((response)=> response.text())
+      .then((data)=>{
+      document.getElementById("footer").innerHTML = data;
+      });
+    </script>
+  </body>
+</html>
